@@ -1,0 +1,9 @@
+.nav-wraper{
+    background-image: url('./images/corona.jpg');
+}
+nav ul a.btn{
+    margin-top: -2px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
