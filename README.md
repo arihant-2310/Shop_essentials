@@ -1,2 +1,1 @@
-# Shop_essentials
-A Shopping cart. 
+# Shop-Essentials

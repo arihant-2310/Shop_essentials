@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="store.js" async></script>
+
+     <!-- materialize icons  -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+<body>
+
+
+     <!-- Navbar -->
+     <nav class="nav-wraper transparent">
+        <div class="container">
+            <a href="#!" class="brand-logo">Madada Haath</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/corona">Store</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Signup</a></li>
+
+               
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a class="waves-effect waves-light btn ">Login</a</li>
+        <li><a class="waves-effect waves-light btn">SignUp</a></li>
+    </ul>
+     <!-- Available Items -->
+     <section class="container content-section">
+        <h2 class="section-header">Food Items</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Rice</span>
+                <img class="shop-item-image" src="images/rice.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.30/kg</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Wheat</span>
+                <img class="shop-item-image" src="images/wheat.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.44/kg</span>
+                    <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Daal</span>
+                <img class="shop-item-image" src="images/daal.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.68/kg</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Sugar</span>
+                <img class="shop-item-image" src="images/sugar.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.42/kg</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container content-section">
+        <h2 class="section-header">Vegetables</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Onion</span>
+                <img class="shop-item-image" src="images/onion.jpg" height="300" width="300">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.30/kg</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Potato</span>
+                <img class="shop-item-image" src="images/potato.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">Rs.25/kg</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart -->
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">Rs.0/-</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+     <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+         // Sidebar
+          $(document).ready(function(){
+         $('.sidenav').sidenav();
+          });
+                
+     </script>
+
+</body>
+</html>
