@@ -1,2 +1,4 @@
-# Shop_essentials
-A Shopping cart. 
+heroku-node
+===========
+
+Code for the tutorial by @sevilayha: Deploying Node Apps to Heroku
