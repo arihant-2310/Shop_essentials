@@ -1,16 +1,3 @@
- /* // Your web app's Firebase configuration
-  var firebase = require('firebase-admin');
-  import * as admin from 'firebase-admin';
-const fs = require('fs') ;
-let data = "Learning how to write in a file."
-  
-// Write data in 'Output.txt' . 
-fs.writeFile('Output.txt', data, (err) => { 
-      
-    // In case of a error throw err. 
-    if (err) throw err; 
-}) ;*/
-
   var firebaseConfig = {
     apiKey: "AIzaSyAMyBcu1NgQfZA4fgTzmYNi0-PBvmNCbkw",
     authDomain: "firelogin13.firebaseapp.com",
@@ -37,9 +24,6 @@ function signin(){
     var pass=document.getElementById("inputPassword");
     const promise=auth.signInWithEmailAndPassword(email.value,pass.value);
     promise.catch(e => console.log(e.message));
-    alert("signed in "+email.value);
-    console.log(promise);
-   // window.location.href = '\\';
 }
 function signout(){
     auth.signOut();
@@ -48,24 +32,27 @@ function signout(){
 auth.onAuthStateChanged(function(user){
     if(user){
         var email=user.email;
+        document.getElementById("usr").innerHTML=email;
+        document.getElementById("usr1").value=email;
         var x = document.getElementById("rgstr");
         var y= document.getElementById("log");
         var z= document.getElementById("sout");
+        var w= document.getElementById("logform");
+        w.style.display="none";
         x.style.display = "none";
         y.style.display="none";
         z.style.display="block";
-        document.getElementById("usr").innerHTML=email;
-        document.getElementById("usr1").value=email;
-
     }
     else{
         document.getElementById("usr").innerHTML="logged out";
         var x = document.getElementById("rgstr");
         var y= document.getElementById("log");
         var z= document.getElementById("sout");
+        z.style.display="none";
+        var w= document.getElementById("logform");
+        w.style.display="block";
         x.style.display = "block";
         y.style.display="block";
-        z.style.display="none";
     }
 });
 function tst(){

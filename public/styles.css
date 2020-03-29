@@ -359,3 +359,10 @@ html, body {
     font-size: 2em;
     font-size: 30px;
 }
+#logedin{
+    margin: 0px auto;
+    text-align: center;
+}
+#logedin p{
+    font-size: 30px bold  ;
+}
