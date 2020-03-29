@@ -6,13 +6,29 @@
     <title>Store</title>
     <link rel="stylesheet" href="styles.css">
     <script src="store.js" async></script>
-
+    <style>
+        #usr1{
+            border: 0px;
+        }
+        #usr{
+            color: black;
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
      <!-- materialize icons  -->
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
 
+     <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="reg.js"></script>
 </head>
 <body>
 
@@ -24,22 +40,21 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="/">Home</a></li>
-                <li><a href="/corona">Store</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
-
-               
+                <li><a id="log" href="/login">Login</a></li>
+                <li><a id="sout" onclick="signout()">Sign Out</a></li>
+                <li><a id="rgstr" href="/register">Signup</a></li>            
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a class="waves-effect waves-light btn ">Login</a</li>
-        <li><a class="waves-effect waves-light btn">SignUp</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="/login" class="waves-effect waves-light btn ">Login</a></li>
+        <li><a href="/register" class="waves-effect waves-light btn">SignUp</a></li>
     </ul>
      <!-- Available Items -->
      <section class="container content-section">
+        <p id="usr" class="section-header" name="usr">loged out</p>
         <h2 class="section-header">Food Items</h2>
         <div class="shop-items">
             <div class="shop-item">
@@ -113,6 +128,10 @@
             <span class="cart-total-price">Rs.0/-</span>
         </div>
         <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        <form action="/buy" method="post">
+            <input type="text" id="usr1" name="creden" value="Logged out" readonly/>
+            <button class="btn btn-primary btn-purchase" type="submit">ORDER</button>
+         </form>
     </section>
      <!-- jquery -->
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -125,6 +144,7 @@
           });
                 
      </script>
+
 
 </body>
 </html>

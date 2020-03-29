@@ -350,3 +350,12 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+.form-group {
+    width:inherit;
+    max-width: 500px;
+    margin: 0 auto;
+    color: black;
+    font-size: 2em;
+    font-size: 30px;
+}
