@@ -10,7 +10,6 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-
   const auth=firebase.auth();
   function signup(){
   var email=document.getElementById("inputEmail");
@@ -19,42 +18,54 @@
   promise.catch(e => alert(e.message));
   alert("signed up");
 }
+
 function signin(){
+    window.Location.href='https://www.google.com/';
     var email=document.getElementById("inputEmail");
     var pass=document.getElementById("inputPassword");
     const promise=auth.signInWithEmailAndPassword(email.value,pass.value);
     promise.catch(e => console.log(e.message));
 }
 function signout(){
+    var x = document.getElementById("rgstr");
+    var y= document.getElementById("log");
     auth.signOut();
+    x.style.display="block";
+    y.style.display="block"
     alert("signed out");
 }
 auth.onAuthStateChanged(function(user){
+    var x = document.getElementById("rgstr");
+    var y= document.getElementById("log");
+    var z= document.getElementById("sout");
+    var w= document.getElementById("logform");
+    var li = document.getElementById("logedin");
+    //w.style.display="none";
     if(user){
         var email=user.email;
-        document.getElementById("usr").innerHTML=email;
+        if(document.getElementById("usr")!=null)
+       { document.getElementById("usr").innerHTML=email;
         document.getElementById("usr1").value=email;
-        var x = document.getElementById("rgstr");
-        var y= document.getElementById("log");
-        var z= document.getElementById("sout");
-        var w= document.getElementById("logform");
-        w.style.display="none";
-        x.style.display = "none";
         y.style.display="none";
+        x.style.display="none";
+        }
+        li.style.display="block";
+        w.style.display="none";
         z.style.display="block";
+
+
     }
     else{
+
         document.getElementById("usr").innerHTML="logged out";
-        var x = document.getElementById("rgstr");
-        var y= document.getElementById("log");
-        var z= document.getElementById("sout");
         z.style.display="none";
-        var w= document.getElementById("logform");
         w.style.display="block";
         x.style.display = "block";
         y.style.display="block";
+        li.style.display="none";
     }
 });
 function tst(){
     return("hahaha");
 }
+

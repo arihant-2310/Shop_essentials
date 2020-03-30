@@ -23,32 +23,30 @@
     <script src="reg.js"></script>
 </head>
 <body>
-
-
-     <!-- Navbar -->
+   
      <nav class="nav-wraper transparent">
         <div class="container">
             <a href="#!" class="brand-logo">Madada Haath</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="/">Home</a></li>
+                <li><a onclick="home()" href="/">Home</a></li>
                 <li><a id="log" href="/login">Login</a></li>
                <li><a id="rgstr" href="/register">Signup</a></li>  
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
+        <li><a  href="index.html">Home</a></li>
         <li><a href="#">Contact</a></li>
         <li><a class="waves-effect waves-light btn ">Login</a></li>
         <li><a href="/register" class="waves-effect waves-light btn">SignUp</a></li>
     </ul>
      <!-- Available Items -->
     <div id="logedin">
-        <h1>Already Logged in !</h1>
+        <h1>Logged in !</h1>
     </div>
-     <form class="container" id="logform" action="/done" method="POST">
-        <div class="form-group">
+     <form id="logform" class="container" action="/done" method="POST">
+        <div  class="form-group">
             <label  for="inputEmail">Email</label>
             <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
         </div>
@@ -63,7 +61,5 @@
             <button onClick="signin()" type="button" class="btn btn-primary">Sign in</button>
         </div>
     </form>
-
-
 </body>
 </html>

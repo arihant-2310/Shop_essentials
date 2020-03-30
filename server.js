@@ -33,7 +33,7 @@ app.post("/done",urlencodedParser,function(req,res){
 
 });
 app.post("/buy",urlencodedParser, function(req,res){
-	//console.log(req.body.creden);
+	console.log(req.body.creden," purchased for ",req.body.p1);
 	res.render("store");
 })
 

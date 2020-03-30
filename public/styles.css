@@ -362,7 +362,111 @@ html, body {
 #logedin{
     margin: 0px auto;
     text-align: center;
+    display: none;
 }
 #logedin p{
     font-size: 30px bold  ;
 }
+
+#loadingDiv {
+    position:absolute;;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#000;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+  }
+  
+
+  
+
+  body {
+    background: #eaecfa;
+  }
+  
+  .loader {
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-family: helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000000;
+    letter-spacing: 0.2em;
+  }
+  .loader::before, .loader::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #35b054;
+    position: absolute;
+    -webkit-animation: load .7s infinite alternate ease-in-out;
+            animation: load .7s infinite alternate ease-in-out;
+  }
+  .loader::before {
+    top: 0;
+  }
+  .loader::after {
+    bottom: 0;
+  }
+  
+  @-webkit-keyframes load {
+    0% {
+      left: 0;
+      height: 30px;
+      width: 15px;
+    }
+    50% {
+      height: 8px;
+      width: 40px;
+    }
+    100% {
+      left: 235px;
+      height: 30px;
+      width: 15px;
+    }
+  }
+  
+  @keyframes load {
+    0% {
+      left: 0;
+      height: 30px;
+      width: 15px;
+    }
+    50% {
+      height: 8px;
+      width: 40px;
+    }
+    100% {
+      left: 235px;
+      height: 30px;
+      width: 15px;
+    }
+  }
+
+  #total{
+      margin: 0px auto;
+      text-align: right;
+      font-size: 20px;      
+      border: 0px;
+  }

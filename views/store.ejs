@@ -31,10 +31,10 @@
     <script src="reg.js"></script>
 </head>
 <body>
-
-
-     <!-- Navbar -->
-     <nav class="nav-wraper transparent">
+    <div id="loading">
+        <div class="loader">Loading...</div>
+    </div>         <!-- Navbar -->
+      <nav class="nav-wraper transparent">
         <div class="container">
             <a href="#!" class="brand-logo">Madada Haath</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -53,7 +53,8 @@
         <li><a href="/register" class="waves-effect waves-light btn">SignUp</a></li>
     </ul>
      <!-- Available Items -->
-     <section class="container content-section">
+
+     <section  class="container content-section">
         <p id="usr" class="section-header" name="usr">loged out</p>
         <h2 class="section-header">Food Items</h2>
         <div class="shop-items">
@@ -126,7 +127,7 @@
         <form action="/buy" method="post">
         <div class="cart-total">
             <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">Rs.0/-</span>
+            <input name="p1" type="text" id="total"  value="0" readonly/>
         </div>
             <input type="text" id="usr1" name="creden" value="Logged out" readonly/>
             <button class="btn btn-primary btn-purchase" type="submit">ORDER</button>
@@ -143,7 +144,6 @@
           });
                 
      </script>
-
-
+     <script src="load.js"></script>
 </body>
 </html>
