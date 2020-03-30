@@ -36,7 +36,6 @@ function signout(){
     alert("signed out");
 }
 auth.onAuthStateChanged(function(user){
-    var x = document.getElementById("rgstr");
     var y= document.getElementById("log");
     var z= document.getElementById("sout");
     var w= document.getElementById("logform");
@@ -47,9 +46,18 @@ auth.onAuthStateChanged(function(user){
         if(document.getElementById("usr")!=null)
        { document.getElementById("usr").innerHTML=email;
         document.getElementById("usr1").value=email;
+        if(document.getElementById("rgstr")!= null){
+            document.getElementById("rgstr").style.display="none";
+        };
+
         y.style.display="none";
         x.style.display="none";
+        alert("aaa");
         }
+        if(document.getElementById("rgstr")!= null){
+            document.getElementById("rgstr").style.display="none";
+        };
+
         li.style.display="block";
         w.style.display="none";
         z.style.display="block";

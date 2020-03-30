@@ -29,7 +29,7 @@ function ready() {
 
 function purchaseClicked() {
     document.getElementById('final').value = 'Rs.' + final
-    alert('Thank you for your purchase '+final)
+    alert('Thank you for your purchase ')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
