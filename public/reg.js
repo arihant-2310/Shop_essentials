@@ -31,7 +31,9 @@ function signout(){
     var x = document.getElementById("rgstr");
     var y= document.getElementById("log");
     auth.signOut();
+    document.getElementById("log1").style.display="block";
     x.style.display="block";
+    document.getElementById("rgstr1").style.display="block";
     y.style.display="block"
     alert("signed out");
 }
@@ -48,14 +50,18 @@ auth.onAuthStateChanged(function(user){
         document.getElementById("usr1").value=email;
         if(document.getElementById("rgstr")!= null){
             document.getElementById("rgstr").style.display="none";
+            document.getElementById("rgstr1").style.display="none";
+            document.getElementById("sout1").style.display="block";
         };
-
+        document.getElementById("log1").style.display="none";
         y.style.display="none";
         x.style.display="none";
         alert("aaa");
         }
         if(document.getElementById("rgstr")!= null){
             document.getElementById("rgstr").style.display="none";
+            document.getElementById("rgstr1").style.display="none";
+
         };
 
         li.style.display="block";
@@ -67,6 +73,7 @@ auth.onAuthStateChanged(function(user){
     else{
 
         document.getElementById("usr").innerHTML="logged out";
+        document.getElementById("sout1").style.display="none";
         z.style.display="none";
         w.style.display="block";
         x.style.display = "block";

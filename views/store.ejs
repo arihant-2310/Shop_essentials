@@ -40,17 +40,17 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="/">Home</a></li>
-                <li><a id="log" href="/login">Login</a></li>
+                <li><a class="log" href="/login">Login</a></li>
                 <li><a id="sout" onclick="signout()">Sign Out</a></li>
                 <li><a id="rgstr" href="/register">Signup</a></li>      
             </ul>
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="/login" class="waves-effect waves-light btn ">Login</a></li>
-        <li><a href="/register" class="waves-effect waves-light btn">SignUp</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a id="log1" href="/login" class="waves-effect waves-light btn ">Login</a></li>
+        <li><a id="sout1" onClick="signout()" class="waves-effect waves-light btn">Sign out</a></li>
+        <li><a id="rgstr1" href="/register" class="waves-effect waves-light btn">SignUp</a></li>
         
     </ul>
      <!-- Available Items -->
@@ -139,13 +139,6 @@
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     <script>
-         // Sidebar
-          $(document).ready(function(){
-         $('.sidenav').sidenav();
-          });
-                
-     </script>
      <script src="load.js"></script>
 </body>
 </html>
