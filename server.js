@@ -16,9 +16,7 @@ app.get('/', function(req, res) {
 app.get('/corona',urlencodedParser, function(req,res){
 	res.render('corona');
 });
-app.get('/mod',function(req,res){
-	res.render('mod');
-})
+
 app.get("/register",function(req,res){
 	res.render('register');
 	//u.signin("aa");
@@ -36,7 +34,7 @@ app.post("/done",urlencodedParser,function(req,res){
 
 });
 app.post("/buy",urlencodedParser, function(req,res){
-	console.log(req.body.creden," purchased for ",req.body.p1);
+	console.log(req.body.creden," purchased for ",(req.body.p1)[1]);
 	res.render("store");
 })
 

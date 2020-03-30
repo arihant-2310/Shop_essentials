@@ -1,3 +1,4 @@
+var final=0
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -27,7 +28,8 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert('Thank you for your purchase')
+    document.getElementById('final').value = 'Rs.' + final
+    alert('Thank you for your purchase '+final)
     var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -100,5 +102,6 @@ function updateCartTotal() {
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementById('total').value = 'Rs.' + total
+    final=total
+    document.getElementById('total').value =  total
 }
