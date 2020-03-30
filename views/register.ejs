@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">    
+     <!-- materialize icons  -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+     <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="reg.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="loader">Loading...</div>
+    </div> 
+    <div>
+     <nav class="nav-wraper transparent">
+        <div class="container">
+            <a href="#!" id="logo" class="brand-logo">Madada Haath</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a id="log" href="/login">Login</a></li>
+                <li><a id="rgstr" href="/register">Signup</a></li>  
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="/"><i class="fa fa-home" id="hom"></i>Home</a></li>
+        <li><a id="log1" href="/login" class="waves-effect waves-light btn ">Login</a></li>
+        <li><a id="rgstr1" href="/register" class="waves-effect waves-light btn">SignUp</a></li>        
+    </ul>
+     <!-- Available Items -->
+
+     <form class="container" action="/done" method="POST">
+        <div class="form-group">
+            <label  for="inputEmail">Email</label>
+            <input name="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input name="password"  type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <button onClick="signup()" type="button" class="btn btn-primary">Sign up</button>
+        </div>
+    </form>
+</div>   
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="load.js"></script>
+
+</body>
+</html>

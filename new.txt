@@ -1,0 +1,139 @@
+2020-03-30T08:29:41.736629+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2020-03-30T08:29:41.736826+00:00 app[web.1]: npm ERR! errno 1
+2020-03-30T08:29:41.737766+00:00 app[web.1]: npm ERR! node-sample@ start: `node server.js`
+2020-03-30T08:29:41.737853+00:00 app[web.1]: npm ERR! Exit status 1
+2020-03-30T08:29:41.737964+00:00 app[web.1]: npm ERR!
+2020-03-30T08:29:41.738043+00:00 app[web.1]: npm ERR! Failed at the node-sample@ start script.
+2020-03-30T08:29:41.738126+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2020-03-30T08:29:41.745033+00:00 app[web.1]: 
+2020-03-30T08:29:41.745209+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2020-03-30T08:29:41.745336+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-03-30T08_29_41_738Z-debug.log
+2020-03-30T08:29:42.000000+00:00 app[api]: Build succeeded
+2020-03-30T08:29:47.283863+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-03-30T08:29:50.580832+00:00 heroku[web.1]: State changed from starting to crashed
+2020-03-30T08:29:50.489101+00:00 app[web.1]: 
+2020-03-30T08:29:50.489448+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2020-03-30T08:29:50.489664+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-03-30T08_29_50_479Z-debug.log
+2020-03-30T08:29:50.229842+00:00 app[web.1]: 
+2020-03-30T08:29:50.229859+00:00 app[web.1]: > node-sample@ start /app
+2020-03-30T08:29:50.229860+00:00 app[web.1]: > node server.js
+2020-03-30T08:29:50.229860+00:00 app[web.1]: 
+2020-03-30T08:29:50.449916+00:00 app[web.1]: internal/modules/cjs/loader.js:985
+2020-03-30T08:29:50.449917+00:00 app[web.1]: throw err;
+2020-03-30T08:29:50.449918+00:00 app[web.1]: ^
+2020-03-30T08:29:50.449918+00:00 app[web.1]: 
+2020-03-30T08:29:50.449918+00:00 app[web.1]: Error: Cannot find module 'body-parser'
+2020-03-30T08:29:50.449919+00:00 app[web.1]: Require stack:
+2020-03-30T08:29:50.449919+00:00 app[web.1]: - /app/server.js
+2020-03-30T08:29:50.449920+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+2020-03-30T08:29:50.449920+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+2020-03-30T08:29:50.449921+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1044:19)
+2020-03-30T08:29:50.449921+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:77:18)
+2020-03-30T08:29:50.449922+00:00 app[web.1]: at Object.<anonymous> (/app/server.js:3:18)
+2020-03-30T08:29:50.449922+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1158:30)
+2020-03-30T08:29:50.449923+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+2020-03-30T08:29:50.449923+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:1002:32)
+2020-03-30T08:29:50.449923+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+2020-03-30T08:29:50.449924+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12) {
+2020-03-30T08:29:50.449924+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2020-03-30T08:29:50.449925+00:00 app[web.1]: requireStack: [ '/app/server.js' ]
+2020-03-30T08:29:50.449925+00:00 app[web.1]: }
+2020-03-30T08:29:50.475372+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2020-03-30T08:29:50.475863+00:00 app[web.1]: npm ERR! errno 1
+2020-03-30T08:29:50.477475+00:00 app[web.1]: npm ERR! node-sample@ start: `node server.js`
+2020-03-30T08:29:50.477690+00:00 app[web.1]: npm ERR! Exit status 1
+2020-03-30T08:29:50.477936+00:00 app[web.1]: npm ERR!
+2020-03-30T08:29:50.478198+00:00 app[web.1]: npm ERR! Failed at the node-sample@ start script.
+2020-03-30T08:29:50.478442+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2020-03-30T08:29:50.555494+00:00 heroku[web.1]: Process exited with status 1
+2020-03-30T08:29:51.648868+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=shopessential.herokuapp.com request_id=876e5998-df4c-4f9a-8ec1-4ded89be0b5a fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=https
+2020-03-30T08:29:52.820052+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=shopessential.herokuapp.com request_id=eb4fa30c-815b-404b-958d-608c3fe718f7 fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=https
+2020-03-30T08:30:09.331899+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=shopessential.herokuapp.com request_id=1fc5d21b-6f3f-4081-beba-d9b9c795a6bb fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=https
+2020-03-30T08:30:10.125123+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=shopessential.herokuapp.com request_id=7df1e45d-504a-4337-9ea3-6f84bd0cb7b4 fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=https
+2020-03-30T08:33:43.000000+00:00 app[api]: Build started by user psjishnu13@gmail.com
+2020-03-30T08:33:58.014274+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=shopessential.herokuapp.com request_id=8e7de241-b712-4067-850f-217f08b82e3b fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=http
+2020-03-30T08:33:59.378555+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=shopessential.herokuapp.com request_id=ca413f24-2f3b-4717-a5e3-543fbed0c96a fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=http
+2020-03-30T08:34:01.436353+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=shopessential.herokuapp.com request_id=ef9e0103-c44a-4b9e-8244-07b28c9865a8 fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=http
+2020-03-30T08:34:02.681744+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=shopessential.herokuapp.com request_id=99088825-c6b0-4904-9985-2d77fe0cfee2 fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=http
+2020-03-30T08:34:06.443351+00:00 heroku[web.1]: State changed from crashed to starting
+2020-03-30T08:34:06.151935+00:00 app[api]: Release v4 created by user psjishnu13@gmail.com
+2020-03-30T08:34:06.151935+00:00 app[api]: Deploy 4000924b by user psjishnu13@gmail.com
+2020-03-30T08:34:10.456265+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-03-30T08:34:12.000000+00:00 app[api]: Build succeeded
+2020-03-30T08:34:13.483360+00:00 heroku[web.1]: State changed from starting to crashed
+2020-03-30T08:34:13.370753+00:00 app[web.1]: 
+2020-03-30T08:34:13.370785+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2020-03-30T08:34:13.370786+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-03-30T08_34_13_342Z-debug.log
+2020-03-30T08:34:13.099811+00:00 app[web.1]: 
+2020-03-30T08:34:13.099827+00:00 app[web.1]: > node-sample@ start /app
+2020-03-30T08:34:13.099828+00:00 app[web.1]: > node server.js
+2020-03-30T08:34:13.099828+00:00 app[web.1]: 
+2020-03-30T08:34:13.316426+00:00 app[web.1]: internal/modules/cjs/loader.js:985
+2020-03-30T08:34:13.316427+00:00 app[web.1]: throw err;
+2020-03-30T08:34:13.316428+00:00 app[web.1]: ^
+2020-03-30T08:34:13.316428+00:00 app[web.1]: 
+2020-03-30T08:34:13.316428+00:00 app[web.1]: Error: Cannot find module 'body-parser'
+2020-03-30T08:34:13.316429+00:00 app[web.1]: Require stack:
+2020-03-30T08:34:13.316429+00:00 app[web.1]: - /app/server.js
+2020-03-30T08:34:13.316430+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+2020-03-30T08:34:13.316430+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+2020-03-30T08:34:13.316431+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1044:19)
+2020-03-30T08:34:13.316431+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:77:18)
+2020-03-30T08:34:13.316432+00:00 app[web.1]: at Object.<anonymous> (/app/server.js:3:18)
+2020-03-30T08:34:13.316432+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1158:30)
+2020-03-30T08:34:13.316432+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+2020-03-30T08:34:13.316433+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:1002:32)
+2020-03-30T08:34:13.316433+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+2020-03-30T08:34:13.316434+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12) {
+2020-03-30T08:34:13.316436+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2020-03-30T08:34:13.316437+00:00 app[web.1]: requireStack: [ '/app/server.js' ]
+2020-03-30T08:34:13.316437+00:00 app[web.1]: }
+2020-03-30T08:34:13.338625+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2020-03-30T08:34:13.338994+00:00 app[web.1]: npm ERR! errno 1
+2020-03-30T08:34:13.340780+00:00 app[web.1]: npm ERR! node-sample@ start: `node server.js`
+2020-03-30T08:34:13.341048+00:00 app[web.1]: npm ERR! Exit status 1
+2020-03-30T08:34:13.341342+00:00 app[web.1]: npm ERR!
+2020-03-30T08:34:13.341586+00:00 app[web.1]: npm ERR! Failed at the node-sample@ start script.
+2020-03-30T08:34:13.341820+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2020-03-30T08:34:13.464468+00:00 heroku[web.1]: Process exited with status 1
+2020-03-30T08:34:14.411716+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=shopessential.herokuapp.com request_id=83a0d0bc-9fa5-46e0-909c-993fbadd4185 fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=http
+2020-03-30T08:34:15.788553+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=shopessential.herokuapp.com request_id=f8cea5ff-a3f6-4869-b495-6afbc4ef1eaf fwd="137.97.102.136" dyno= connect= service= status=503 bytes= protocol=http
+2020-03-30T08:41:13.383619+00:00 heroku[web.1]: State changed from crashed to starting
+2020-03-30T08:41:17.436948+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-03-30T08:41:23.547160+00:00 app[web.1]: 
+2020-03-30T08:41:23.547210+00:00 app[web.1]: > node-sample@ start /app
+2020-03-30T08:41:23.547211+00:00 app[web.1]: > node server.js
+2020-03-30T08:41:23.547211+00:00 app[web.1]: 
+2020-03-30T08:41:23.718701+00:00 app[web.1]: internal/modules/cjs/loader.js:985
+2020-03-30T08:41:23.718706+00:00 app[web.1]: throw err;
+2020-03-30T08:41:23.718706+00:00 app[web.1]: ^
+2020-03-30T08:41:23.718707+00:00 app[web.1]: 
+2020-03-30T08:41:23.718707+00:00 app[web.1]: Error: Cannot find module 'body-parser'
+2020-03-30T08:41:23.718707+00:00 app[web.1]: Require stack:
+2020-03-30T08:41:23.718708+00:00 app[web.1]: - /app/server.js
+2020-03-30T08:41:23.718711+00:00 app[web.1]: at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+2020-03-30T08:41:23.718711+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+2020-03-30T08:41:23.718714+00:00 app[web.1]: at Module.require (internal/modules/cjs/loader.js:1044:19)
+2020-03-30T08:41:23.718714+00:00 app[web.1]: at require (internal/modules/cjs/helpers.js:77:18)
+2020-03-30T08:41:23.718714+00:00 app[web.1]: at Object.<anonymous> (/app/server.js:3:18)
+2020-03-30T08:41:23.718714+00:00 app[web.1]: at Module._compile (internal/modules/cjs/loader.js:1158:30)
+2020-03-30T08:41:23.718715+00:00 app[web.1]: at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+2020-03-30T08:41:23.718715+00:00 app[web.1]: at Module.load (internal/modules/cjs/loader.js:1002:32)
+2020-03-30T08:41:23.718715+00:00 app[web.1]: at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+2020-03-30T08:41:23.718718+00:00 app[web.1]: at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:74:12) {
+2020-03-30T08:41:23.718718+00:00 app[web.1]: code: 'MODULE_NOT_FOUND',
+2020-03-30T08:41:23.718718+00:00 app[web.1]: requireStack: [ '/app/server.js' ]
+2020-03-30T08:41:23.718719+00:00 app[web.1]: }
+2020-03-30T08:41:23.724446+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2020-03-30T08:41:23.724754+00:00 app[web.1]: npm ERR! errno 1
+2020-03-30T08:41:23.725785+00:00 app[web.1]: npm ERR! node-sample@ start: `node server.js`
+2020-03-30T08:41:23.725943+00:00 app[web.1]: npm ERR! Exit status 1
+2020-03-30T08:41:23.726108+00:00 app[web.1]: npm ERR!
+2020-03-30T08:41:23.726249+00:00 app[web.1]: npm ERR! Failed at the node-sample@ start script.
+2020-03-30T08:41:23.726390+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2020-03-30T08:41:25.034231+00:00 app[web.1]: 
+2020-03-30T08:41:25.034398+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2020-03-30T08:41:25.034467+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2020-03-30T08_41_23_726Z-debug.log
+2020-03-30T08:41:25.103913+00:00 heroku[web.1]: State changed from starting to crashed
+2020-03-30T08:41:25.086345+00:00 heroku[web.1]: Process exited with status 1
+Terminate batch job (Y/N)? 
