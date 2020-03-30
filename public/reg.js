@@ -23,9 +23,10 @@ function signin(){
     window.Location.href='https://www.google.com/';
     var email=document.getElementById("inputEmail");
     var pass=document.getElementById("inputPassword");
+    var repass=document.getElementById("reinputPassword");
     const promise=auth.signInWithEmailAndPassword(email.value,pass.value);
-    promise.catch(e => console.log(e.message));
-}
+    promise.catch(e => console.log(e.message));}
+
 function signout(){
     var x = document.getElementById("rgstr");
     var y= document.getElementById("log");
