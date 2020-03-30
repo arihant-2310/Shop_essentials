@@ -16,7 +16,9 @@
     margin-left: 1px;
     margin-right: 1px;
 } */
-
+#logo{
+    font-size: x-large;
+}
 
 * {
     box-sizing: border-box;
@@ -468,4 +470,8 @@ html, body {
       text-align: right;
       font-size: 20px;      
       border: 0px;
+  }
+  #hom{
+      color: red;
+      font-size: larger;
   }

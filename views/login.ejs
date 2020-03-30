@@ -16,7 +16,7 @@
      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
 
      <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="reg.js"></script>
@@ -27,7 +27,7 @@
     </div>    
      <nav class="nav-wraper transparent">
         <div class="container">
-            <a href="#!" class="brand-logo">Madada Haath</a>
+            <a href="#!"id="logo"  class="brand-logo">Madada Haath</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a onclick="home()" href="/">Home</a></li>
@@ -37,7 +37,7 @@
         </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="/">Home</a></li>
+        <li><a href="/"><i class="fa fa-home" id="hom"></i>Home</a></li>
         <li><a id="log1" href="/login" class="waves-effect waves-light btn ">Login</a></li>
         <li><a id="rgstr1" href="/register" class="waves-effect waves-light btn">SignUp</a></li>        
     </ul>
